@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    
+  }
+  a{
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav{
+    background-color: #0072ff;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+  
+  }
+  nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    margin-top: 12px;
+    padding: 8px 50px;
+  }
+  .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+  }
+  .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: black;
+  } 
+  @media only screen and (max-width: 700px){
+ 
+    nav ul li a{
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+    .photo1 img{
+        width: 100%;
+        height: 200px;
+        
+    }
+  }
+  @media only screen and (max-width: 450px){
+   
+    nav ul li a{
+        font-size: 22px;
+        padding: 15px 10px;
+    }
+    .photo1 img{
+        width: 100%;
+        height: 200px;
+        
+    }
+  }
+/*
+.navbar {
+    background: white;
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
+  }
+  .navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+  }
+  .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #3B63D3;
+  }
+  .navbar-toggler{
+    background: #e74c3c;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+  }
+  .navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+  }
+  .navbar-toggler span + span{
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+  }
+  .navbar-toggler span + span + span{
+    width: 10px;
+    margin-left: 10px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 2rem;
+    font-size: 1.4rem;
+    position: relative;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-top: 4px solid #e74c3c;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.active{
+    border-top: 4px solid #e74c3c;
+    color: #e74c3c;
+  }
+  
+  .navbar-nav button{
+    padding: 1.2rem 0;
+  }
+  .navbar-nav .btn{
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+  .navbar-nav .btn:hover{
+    background-color: #0a3d62;
+  }
+*/
+.contact-main{
+    background: url("../images/contact.avif");
+    background-position: center;
+    background-size: cover ;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.contact-main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    min-width: 75%;
+    text-align: center;
+}
+
+.contact-main-text h1{
+    font-size: 4rem;
+}
+
+.contact-main-text {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.contact-main-text a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: 3px solid white;
+    position: relative;
+}
+
+.contact-main-text a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(64, 124, 255);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: .3s ease-in-out;
+}
+
+.contact-main-text a:hover::before{
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-main-text{
+        width: 90%;
+    }
+    
+    .contact-main-text h1{
+        font-size: 2rem;
+    }
+
+    .contact-main-text p{
+        font-size: 1rem;
+    }
+}
+
+.contact-form{
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact-form form{
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input{
+    height: 40px;
+    padding: 5px 10px;
+    outline: none; 
+    margin-bottom: 5px;
+}
+.contact-form form textarea{
+    padding: 5px 10px;
+    outline: none; 
+}
+
+.contact-form form input:focus, .contact-form form textarea:focus{
+    outline: 2px solid royalblue;
+}
+
+.contact-form form button{
+    background-color: royalblue;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 5px 0;
+    transition: .3s ease-in-out;
+}
+
+.contact-form form button:hover{
+    background-color: rgb(0, 64, 255);
+}
+
+.social-medias{
+    max-width: 500px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.social-medias ul li{
+    list-style: none;
+}
+
+.social-medias ul li a{
+    text-decoration: none;
+    color: #555;
+    }
+
+    .social-medias ul li a:hover{
+        color: black;
+        }
+
+.social-medias ul li a i{
+    color: black;
+    margin-right: 5px;
+}
+
+.social-medias ul li a:hover i{
+    color: rgb(70, 41, 174);
+}
+
+
+.copyright {
+    border-radius: 20px;
+    background-color: #3B63D3;
+    font-family: 'Tapestry', cursive;
+  font-family: 'Water Brush', cursive;
+    color: white  ;
+    
+  }
+
+
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #aaa;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  

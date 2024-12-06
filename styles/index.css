@@ -178,3 +178,130 @@ nav ul li a{
             font-size: 1rem;
         }
 }
+
+.subscribe{
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+
+}
+
+.subscribe-box{
+    padding: 10px;
+}
+
+.subscribe-box input{
+    max-width: 300px;
+    width: 65%;
+    padding: 5px 10px;
+    height: 50px;
+}
+.subscribe-box button{
+    border: none;
+    background-color: #0072ff;
+    height: 40px;
+    padding: 0 1rem;
+    color: white;
+}
+
+.copyright{
+    border-radius: 20px;
+    background-color: #3B63D3;
+    font-family: 'Tapestry', cursive;
+     font-family: 'Water Brush', cursive;
+     color: white;
+}
+
+.footer-basic ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.footer-basic li{
+    padding: 0 10px;
+}
+
+.footer-basic ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer-basic ul a:hover{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.footer-basic .social > a{
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .sociak > a:hover{
+    opacity: 0.9;
+}
+
+.footer-basic .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size:cover;
+}
+.carousel-item:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.carousel-caption h5{
+    font-size: 40px;
+    font-weight: 400;
+}
+.carousel-caption p{
+    font-size: 18px;
+    top: 2rem;
+}
+.slider-btn{
+    margin-top: 30px;
+}
+
+.slider-btn .btn{
+    background-color: #e74c3c;
+    columns: white;
+    border-radius: 0;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.slider-btn .btn-2{
+    color: #111010;
+    background-color: white;
+}

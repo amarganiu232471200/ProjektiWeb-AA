@@ -70,7 +70,39 @@
       <p class="copyright">AG creative © 2022</p>
   </footer>
 
-    
+  <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      // Attach event listener to the form
+      const loginForm = document.querySelector("form");
+      loginForm.addEventListener("submit", validateLoginForm);
+    });
+  
+    function validateLoginForm(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value;
+  
+      // Username validation
+      if (username === "") {
+        alert("Username cannot be empty.");
+        return;
+      }
+  
+      // Password validation
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+      }
+  
+      // If validation passes
+      alert("Login successful!");
+    }
+  </script>
+  
+</body>
+</html>
 
     
 
